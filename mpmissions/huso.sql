@@ -1,0 +1,11 @@
+ALTER TABLE `players` ADD COLUMN `num` VARCHAR(10) NOT NULL DEFAULT '0';
+ALTER TABLE `players` ADD COLUMN `contact` TEXT NULL DEFAULT NULL;
+ALTER TABLE `players` ADD COLUMN `sms` INT(10) NOT NULL DEFAULT '0';
+ALTER TABLE `players` ADD COLUMN `appel` INT(10) NOT NULL DEFAULT '0';
+CREATE TABLE IF NOT EXISTS `cellphone` (
+`pid` varchar(64) NOT NULL,
+`name` varchar(32) NOT NULL,
+`messages` text NOT NULL,
+`insert_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY (`pid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
