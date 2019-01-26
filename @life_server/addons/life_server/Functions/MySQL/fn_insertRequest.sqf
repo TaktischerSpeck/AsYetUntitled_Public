@@ -55,5 +55,3 @@ _query = format ["INSERT INTO players (pid, name, cash, bankacc, aliases, cop_li
 
 [_query,1] call DB_fnc_asyncCall;
 [] remoteExecCall ["SOCK_fnc_dataQuery",(owner _returnToSender)];
-
-[] remoteExec ["max_phone_fnc_resetContact",(owner _returnToSender)];
