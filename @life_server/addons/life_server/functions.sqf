@@ -8,8 +8,6 @@
 
 publicVariable "TON_fnc_terrainSort";
 
-#include "The-Programmer\Phone\scripts\clientMessage.sqf"
-
 TON_fnc_index =
 compileFinal "
     params [
